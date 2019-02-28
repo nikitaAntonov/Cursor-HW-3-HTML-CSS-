@@ -2,9 +2,332 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>MARKUP FOR NAVIGATION SYSTEM</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Teko:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
 </head>
 <body>
-	
+
+	<section id="first-line">
+		<nav id="header">
+			<div id="crew" class="row border">
+				<h1>Crew</h1>
+				<p>DRAGON</p>
+			</div>
+			<div id="perigee" class="row border">
+				<h1>Perigee</h1>
+				<p class="meter">185.013<span>m</span></p>
+				<img id="minus" src="img/minus.png" alt="">
+			</div>
+			<div id="apogee" class="row border">
+				<h1>Apogee</h1>
+				<p class="meter">360.304<span>m</span></p>
+				<img id="minus" src="img/minus.png" alt="">
+			</div>
+			<div id="relative" class="row border">
+				<h1>Relative Altitude</h1>
+				<p class="meter">50,948<span>m</span></p>
+				<img id="down" src="img/arrow.png" alt="">
+			</div>
+			<div id="range" class="row border">
+				<h1>Range to ISS</h1>
+				<p class="meter">625,713<span>m</span></p>
+				<img id="down" src="img/arrow.png" alt="">
+			</div>
+		</nav>
+		<img id="img-monitor" src="img/foto-zemli-iz-kosmosa1.jpg" alt="Фото земли из космоса">
+	</section>
+
+	<section id="after-img">
+		<nav class="after-img_header">
+
+			<div id="day" class="row2 border">
+				<p>Day 131</p>
+				<time>13:46:11</time>
+			</div>
+
+			<div id="trajectory" class="row2 border"></div>
+
+			<div id="next-burn" class="row2 border">
+				<div class="next-burn__header">
+					<p>Next Burn</p>
+					<p>Enabled
+						<div></div>
+					</p>
+				</div>
+				<div class="next-burn_time">
+					<p>-0:05:48</p>
+				</div>
+				<div class="next-burn_info">
+					<time>13:52:00</time>
+					<p>DAY 131</p>
+				</div>
+			</div>
+
+			<div id="target" class="row2 border">
+				<div style="align-items: center;">
+					<div class="target_header"><p>Target ΔV</p></div>
+					<div class="target_meters"><p>33.5 m/s</p></div>
+					<div class="target_info"><span>Thruster Temps</span></div>
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<section id="alarms" class="border">
+		<div class="container">
+			<div class="container_left">
+				<div>0</div>
+				<div>alarms</div>
+			</div>
+			<div class="container_right">
+				<div>all systems nominal</div>
+				<div><i class="im im-check-mark"></i></div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section id="after-alarms">
+		<div class="after-alarms_left">
+			<div class="twins_up border">
+				<div class="twins_time">
+					-0:08:24
+				</div>
+				<div class="time_los">
+					<div>
+						<p>Next LOS</p>
+						<p>(00:03:17)</p>
+					</div>
+					<div>
+						<time>13:54:36</time>
+						<p>day 131</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="twins_down border">
+				<div class="twins_time">
+					-2:51:02
+				</div>
+				<div class="iss">
+					<div>
+						<p>Estimated ISS Arrival</p>
+					</div>
+					<div>
+						<time>16:37:15</time>
+						<p>day 131</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="after-alarms_right border ">
+			<div class="right__twins_up">
+				<div class="twins_time">
+					-0:23:23
+				</div>
+				<div class="deorbit">
+					<div>
+						<p>Next Deorbit Window</p>
+						<p>Pacific</p>
+					</div>
+					<div>
+						<time>14:09:36</time>
+						<p>day 131</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="line-horizontal"></div>
+
+			<div class="right__twins_down">
+				<div class="container">
+					<div>
+						<p>Current Breakout</p>
+						<p>Retrograde</p>
+					</div>
+					<div>
+						ΔV = 5.0 m/s
+					</div>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="schedule">
+		<div class="schedule">
+			<p>Schedule</p>
+			<div class="schedule_events">
+				<p>All events</p>
+				<button><i class="im im-angle-down"></i></button>
+			</div>
+		</div>
+		<div class="schedule-info">
+			<div class="schedule-info_time">
+				<p>13:10:00</p>
+				<p>13:37:00</p>
+				<p>13:46:45</p>
+				<p>13:52:10</p>
+			</div>
+			<div class="schedule-info_line">
+				<div class="point"></div>
+			</div>
+			<div class="schedule-info_list">
+						<div>
+							<p>Randezvous burn <i>go/no-go</i></p> <p>Ground</p>
+						</div>
+						<hr>
+						<div>
+							<p>Prepare for rendezvous burn</p> <p>Crew</p>
+						</div>
+						<hr>
+						<div>
+							<p>Randezvous burn slow</p> <p>Dragon</p>
+						</div>
+						<hr>
+						<div>
+							<p>Randezvous Burn</p> <p>Dragon</p>
+						</div>
+					</div>
+		</div>
+	</section>
+
+	<section id="last-section">
+
+		<div class="double-header">
+			<div class="header-first">Rendezvous</div>
+			<div class="header-second">Approach</div>
+		</div>
+
+		<div id="for-table">
+			<div id="table-progress-line"></div>
+			<div id="table">
+				<div id="table-cell">Ground</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-g1" class="table-value"></div>
+				<div id="value-g2" class="table-value"></div>
+				<div id="value-g3" class="table-value"></div>
+				<div id="value-g4" class="table-value"></div>
+				<div id="value-g5" class="table-value"></div>
+				<div id="value-g6" class="table-value"></div>
+				<div id="value-g7" class="table-value"></div>
+			</div>
+			<div id="table">
+				<div id="table-cell">TDRS</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-t1" class="table-value"></div>
+				<div id="value-t2" class="table-value"></div>
+				<div id="value-t3" class="table-value"></div>
+				<div id="value-t4" class="table-value"></div>
+				<div id="value-t5" class="table-value"></div>
+				<div id="value-t6" class="table-value"></div>
+				<div id="value-t7" class="table-value"></div>
+				<div id="value-t8" class="table-value"></div>
+			</div>
+			<div id="table">
+				<div id="table-cell">ISS</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-i1" class="table-value"></div>
+				<div id="value-i2" class="table-value"></div>
+				<div id="value-i3" class="table-value"></div>
+				<div id="value-i4" class="table-value"></div>
+				<div id="value-i5" class="table-value"></div>
+				<div id="value-i6" class="table-value"></div>
+				<div id="value-i7" class="table-value"></div>
+				<div id="value-i8" class="table-value"></div>
+				<div id="value-i9" class="table-value"></div>
+			</div>
+			<div id="table">
+				<div id="table-cell">Eclipse</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-e1" class="table-value"></div>
+				<div id="value-e2" class="table-value"></div>
+				<div id="value-e3" class="table-value"></div>
+			</div>
+			<div id="table">
+				<div id="table-cell">Burn</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-b1" class="table-value"></div>
+				<div id="value-b2" class="table-value"></div>
+				<div id="value-b3" class="table-value"></div>
+				<div id="value-b4" class="table-value"></div>
+				<div id="value-b5" class="table-value"></div>
+			</div>
+			<div id="table">
+				<div id="table-cell">Crew</div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="table-cell"></div>
+				<div id="value-c1" class="table-value"></div>
+			</div>
+
+			<div id="table" class="table-time">
+				<div id="table-cell" class="table-time">12:30</div>
+				<div id="table-cell" class="table-time">13:00</div>
+				<div id="table-cell" class="table-time">13:30</div>
+				<div id="table-cell" class="table-time">14:00</div>
+				<div id="table-cell" class="table-time">14:30</div>
+				<div id="table-cell" class="table-time">15:00</div>
+				<div id="table-cell" class="table-time">15:30</div>
+				<div id="table-cell" class="table-time">16:00</div>
+				<div id="table-cell" class="table-time">16:30</div>
+			</div>
+		</div>
+
+		<div id="progres">
+			<div id="progres-value">
+				
+			</div>
+		</div>
+	</section>
 </body>
 </html>
